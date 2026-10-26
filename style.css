@@ -687,3 +687,160 @@ footer {
     transform: none;
   }
 }
+
+/* THE LITTLE THINGS — CINEMATIC MEMORY SECTION */
+
+.little-things {
+  padding: 130px 7%;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 15% 25%, #7043a01c, transparent 45%),
+    radial-gradient(ellipse at 85% 75%, #a78bfa12, transparent 45%),
+    #0b0812;
+  text-align: center;
+}
+
+.little-things h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(44px, 7vw, 78px);
+  font-weight: 400;
+  line-height: 1.08;
+  margin-bottom: 25px;
+}
+
+.little-things h2 em {
+  color: #d9b8f0;
+}
+
+.little-intro {
+  max-width: 570px;
+  margin: 0 auto 65px;
+  color: #aaa0b9;
+  font-size: 13px;
+  line-height: 2.1;
+}
+
+.little-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.little-card {
+  position: relative;
+  padding: 32px;
+  overflow: hidden;
+  border: 1px solid #c4a4ff18;
+  background: linear-gradient(145deg, #171020, #0c0912);
+  transition:
+    transform .5s ease,
+    border-color .5s ease,
+    box-shadow .5s ease;
+}
+
+.little-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    circle at 0% 0%,
+    #a78bfa1c,
+    transparent 70%
+  );
+  transition: opacity .5s ease;
+}
+
+.little-card:hover {
+  transform: translateY(-7px);
+  border-color: #c4a4ff70;
+  box-shadow: 0 15px 45px #00000035;
+}
+
+.little-card:hover::before {
+  opacity: 1;
+}
+
+.little-icon {
+  display: inline-block;
+  color: #c4a4ff;
+  font-size: 28px;
+  margin-bottom: 25px;
+  transition: transform .4s ease, text-shadow .4s ease;
+}
+
+.little-card:hover .little-icon {
+  transform: scale(1.12);
+  text-shadow: 0 0 20px #c4a4ff88;
+}
+
+.card-label {
+  position: relative;
+  color: #a78bfa;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.little-card h3 {
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 17px;
+}
+
+.little-card > p:last-child {
+  position: relative;
+  color: #aaa0b9;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.little-ending {
+  max-width: 700px;
+  margin: 75px auto 0;
+  padding: 35px 20px;
+  border-top: 1px solid #c4a4ff30;
+  border-bottom: 1px solid #c4a4ff30;
+}
+
+.little-ending p {
+  color: #e0d0f3;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(24px, 4vw, 36px);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .little-things {
+    padding: 90px 20px;
+  }
+
+  .little-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .little-card {
+    padding: 27px;
+  }
+
+  .little-intro {
+    margin-bottom: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .little-card,
+  .little-icon {
+    transition: none;
+  }
+}
