@@ -462,3 +462,228 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* ===== CINEMATIC ANIMATION UPGRADE ===== */
+
+.hero {
+  background-size: 150% 150%;
+  animation: auroraMove 14s ease-in-out infinite alternate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 30% 40%, #a855f733, transparent 35%),
+    radial-gradient(ellipse at 70% 65%, #6d28d933, transparent 38%);
+  filter: blur(35px);
+  animation: auroraMove 12s ease-in-out infinite alternate;
+}
+
+.hero h1 {
+  text-shadow: 0 0 30px #a78bfa12;
+  animation: titleGlow 5s ease-in-out infinite alternate;
+}
+
+.hero h1 em {
+  background: linear-gradient(
+    110deg,
+    #f5eaff 15%,
+    #bca0ff 35%,
+    #ffffff 50%,
+    #c5a4ff 65%,
+    #f5eaff 85%
+  );
+  background-size: 250% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textShine 6s linear infinite;
+}
+
+.moon {
+  animation:
+    moonGlow 5s ease-in-out infinite alternate,
+    moonFloat 8s ease-in-out infinite;
+}
+
+.stars {
+  animation: starDrift 35s linear infinite, starTwinkle 4s ease-in-out infinite alternate;
+}
+
+.discover {
+  transition: letter-spacing .4s ease, transform .4s ease, color .4s ease;
+}
+
+.discover:hover {
+  letter-spacing: 4px;
+  transform: translateY(-5px);
+}
+
+.chapter,
+.memory,
+.question-section,
+.strength,
+.letter-section {
+  position: relative;
+}
+
+.chapter::after,
+.memory::after,
+.question-section::after,
+.strength::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  margin: 42px auto 0;
+  background: linear-gradient(90deg, transparent, #bba0ff, transparent);
+  transition: width 1.4s ease;
+}
+
+.chapter.in-view::after,
+.memory.in-view::after,
+.question-section.in-view::after,
+.strength.in-view::after {
+  width: min(240px, 65%);
+}
+
+.chapter h2,
+.memory h2,
+.question-section h2,
+.strength h2,
+.letter-section h2 {
+  transition: text-shadow .7s ease;
+}
+
+.in-view h2 {
+  text-shadow: 0 0 35px #a78bfa18;
+}
+
+.question-list p {
+  opacity: 0;
+  transform: translateX(-18px);
+  transition:
+    opacity .7s ease,
+    transform .7s ease,
+    padding-left .3s,
+    color .3s;
+}
+
+.question-section.in-view .question-list p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.question-section.in-view .question-list p:nth-child(2) {
+  transition-delay: .15s;
+}
+
+.question-section.in-view .question-list p:nth-child(3) {
+  transition-delay: .3s;
+}
+
+.question-section.in-view .question-list p:nth-child(4) {
+  transition-delay: .45s;
+}
+
+.letter-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.letter-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 55%;
+  height: 200%;
+  transform: rotate(25deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ffffff20,
+    transparent
+  );
+  transition: left .8s ease;
+}
+
+.letter-button:hover::before {
+  left: 150%;
+}
+
+.letter-content {
+  box-shadow: 0 0 60px #8b5cf615;
+}
+
+.brand {
+  transition: text-shadow .4s ease;
+}
+
+.brand:hover {
+  text-shadow: 0 0 22px #bba0ff77;
+}
+
+@keyframes auroraMove {
+  0% {
+    background-position: 0% 50%;
+    transform: translate3d(-1%, 0, 0);
+  }
+  100% {
+    background-position: 100% 50%;
+    transform: translate3d(1%, 1%, 0);
+  }
+}
+
+@keyframes titleGlow {
+  from {
+    text-shadow: 0 0 15px #a78bfa0a;
+  }
+  to {
+    text-shadow: 0 0 35px #a78bfa30;
+  }
+}
+
+@keyframes textShine {
+  to {
+    background-position: 250% center;
+  }
+}
+
+@keyframes moonFloat {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -13px;
+  }
+}
+
+@keyframes starTwinkle {
+  from {
+    opacity: .35;
+  }
+  to {
+    opacity: .8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .hero::before,
+  .hero h1,
+  .hero h1 em,
+  .moon,
+  .stars {
+    animation: none !important;
+  }
+
+  .question-list p {
+    opacity: 1;
+    transform: none;
+  }
+}
