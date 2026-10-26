@@ -4,250 +4,332 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080610">
-  <title>You Never Knew What You Held</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#080611">
+  <title>You Never Knew ♡</title>
+  <meta name="description" content="A story of love, attachment, unanswered questions, and finding yourself again.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="stars" aria-hidden="true"></div>
 
-  <nav class="nav">
-    <a href="#home" class="brand">untold<span>.</span></a>
-    <a href="#letter" class="nav-link">A letter, someday</a>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <a class="brand" href="#home">You Never Knew <span>♡</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#feelings">Feelings</a>
+      <a href="#little-things">Little Things</a>
+      <a href="#truth">The Truth</a>
+      <a href="#letter">Letter</a>
+    </div>
   </nav>
 
   <main>
+    <!-- HERO -->
     <section class="hero" id="home">
-      <div class="moon"></div>
-      <p class="eyebrow reveal">A STORY THAT NEVER FOUND ITS WORDS</p>
-      <h1 class="reveal">You never knew<br>what you <em>held.</em></h1>
-      <p class="hero-copy reveal">
-        Some feelings are too deep to explain
-        and too real to pretend they never existed.
-      </p>
-      <a class="discover reveal" href="#story">
-        <span>READ WHAT I NEVER SAID</span>
-        <span class="arrow">↓</span>
-      </a>
-      <span class="vertical-note">A PIECE OF MY UNWRITTEN STORY</span>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">SOME PEOPLE JUST...</p>
+        <h1>Become a part of<br>your story,<br><em>without even trying.</em></h1>
+        <p class="hero-description">
+          You didn't just enter my life.<br>
+          You stayed in my thoughts, my habits,<br>
+          my dreams, my fears... everything.
+        </p>
+        <a class="discover-link" href="#story">Read what I never said <span>↓</span></a>
+      </div>
+
+      <div class="hero-scene" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="horizon"></div>
+        <div class="hero-girl"></div>
+        <p class="scene-caption">Somewhere between love and fear...<br>I almost lost myself in you.</p>
+      </div>
+      <div class="scroll-indicator">SCROLL TO FEEL THE STORY ↓</div>
     </section>
 
-    <section class="chapter" id="story">
-      <p class="eyebrow">01 — THE BEGINNING</p>
-      <h2>Some people arrive<br>and quietly become <em>home.</em></h2>
-      <p>
-        I never planned to feel so much. Some moments simply
-        became memories, some conversations became comfort,
-        and somewhere along the way, a person became part of
-        the future I imagined.
-      </p>
-      <p class="soft-line">Not every meaningful thing begins with a promise.</p>
-    </section>
-
-    <section class="memory">
-      <div class="memory-mark">✳</div>
-      <p class="eyebrow">02 — THE LITTLE THINGS</p>
-      <h2>It was never just<br>about the <em>moments.</em></h2>
-      <p>
-        It was the little details. The time spent together.
-        The ordinary things that felt different because of
-        who was beside me.
-      </p>
-      <p>
-        Maybe you remember the places. I remember how much
-        those moments meant to me.
-      </p>
-    </section>
-
-    <section class="chapter chapter-dark">
-      <p class="eyebrow">03 — THE UNSPOKEN</p>
-      <h2>There is a difference<br>between being loved<br>and feeling <em>understood.</em></h2>
-      <p>
-        Sometimes I wanted to explain everything. Sometimes
-        I stayed quiet because I did not know how to say it
-        without sounding afraid, needy, or too emotional.
-      </p>
-      <p>
-        But silence does not always mean everything is fine.
-        Sometimes it means there is too much to say.
-      </p>
-    </section>
-
-    <section class="question-section">
-      <p class="eyebrow">04 — QUESTIONS WITHOUT ANSWERS</p>
-      <h2>Things I wish<br>I could ask.</h2>
-      <div class="question-list">
-        <p>Have you ever wondered what uncertainty feels like to the other person?</p>
-        <p>Do you know how much courage it takes to love someone while fearing the unknown?</p>
-        <p>Can two people dream of a future without being afraid to talk about it?</p>
-        <p>And can love make room for honesty, even when the truth is difficult?</p>
+    <!-- CHAPTER 1 -->
+    <section class="story-section section-wrap reveal" id="story">
+      <div class="section-copy">
+        <p class="eyebrow">CHAPTER 01 — THE BEGINNING</p>
+        <h2>It started with you.<br><em>And slowly, it became us.</em></h2>
+        <p>
+          I don't know when you became such an important part of my life.
+          When your words became a part of my days, or when your happiness
+          started feeling like my own.
+        </p>
+        <p>
+          I kept choosing you, even in moments when choosing you meant
+          ignoring the questions I was too afraid to ask.
+        </p>
+        <p class="handwritten">Maybe, to me, it was never just love. ♡</p>
+      </div>
+      <div class="scene-frame couple-scene" aria-hidden="true">
+        <div class="couple-boy"></div>
+        <div class="couple-girl"></div>
+        <span class="floating-heart">♡</span>
+        <p class="scene-word">Once upon our time...</p>
       </div>
     </section>
 
-    <section class="strength">
-      <p class="eyebrow">05 — THE GIRL BEHIND THE FEELINGS</p>
-      <h2>I can love you<br>and still remember <em>myself.</em></h2>
-      <p>
-        My feelings are real. My hopes are real. And so is
-        the person I am becoming beyond this story.
-      </p>
-      <p>
-        I do not need every answer today. But I deserve
-        honesty, clarity, and a future where my feelings
-        are allowed to matter too.
+    <!-- CHAPTER 2 -->
+    <section class="feelings-section section-wrap reveal" id="feelings">
+      <div class="section-heading">
+        <p class="eyebrow">CHAPTER 02 — THINGS I NEVER SAID</p>
+        <h2>I felt more than<br><em>I ever showed.</em></h2>
+      </div>
+
+      <div class="feelings-grid">
+        <article class="feeling-card">
+          <span class="card-symbol">♡</span>
+          <p class="card-number">01 / LOVE</p>
+          <h3>I chose you.</h3>
+          <p>I kept believing in what we had. Even when other voices made me question it, a part of me still wanted to believe that our story was worth the risk.</p>
+        </article>
+        <article class="feeling-card">
+          <span class="card-symbol">☾</span>
+          <p class="card-number">02 / ATTACHMENT</p>
+          <h3>You became a habit.</h3>
+          <p>Your pictures, your memories, the smallest things that reminded me of you. I never noticed when thinking about you became part of almost every day.</p>
+        </article>
+        <article class="feeling-card">
+          <span class="card-symbol">✧</span>
+          <p class="card-number">03 / FEAR</p>
+          <h3>What if I was wrong?</h3>
+          <p>Sometimes I wondered whether we were dreaming of the same future. Whether, when life became difficult, we would still choose each other.</p>
+        </article>
+        <article class="feeling-card">
+          <span class="card-symbol">∞</span>
+          <p class="card-number">04 / HOPE</p>
+          <h3>I wanted something real.</h3>
+          <p>I never expected perfection. I wanted honesty, clarity, and the feeling that I wasn't the only one thinking about how our future could work.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="truth-section section-wrap reveal" id="truth">
+      <div class="window-scene" aria-hidden="true">
+        <div class="window-moon"></div>
+        <div class="sitting-girl"></div>
+        <span class="window-star">✧</span>
+      </div>
+      <div class="section-copy">
+        <p class="eyebrow">CHAPTER 03 — THE TRUTH</p>
+        <h2>I was just a girl...<br><em>trying to believe.</em></h2>
+        <p>
+          I wasn't blind to every possibility. Maybe the doubts were there
+          all along. But attachment has a strange way of making you silence
+          the very thoughts that are trying to protect you.
+        </p>
+        <p>
+          People had their opinions. I heard them, but I kept hoping that
+          what I felt was real, that what we had would turn out differently.
+        </p>
+        <p>
+          Perhaps I wasn't protecting our love anymore.
+          Perhaps I was protecting the future I had imagined.
+        </p>
+        <p class="handwritten">I believed. Even when I wasn't sure. ♡</p>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="darppok-section section-wrap reveal">
+      <div class="night-scene" aria-hidden="true">
+        <div class="night-moon"></div>
+        <div class="night-boy"></div>
+        <div class="night-girl"></div>
+        <p class="night-caption">Two hearts.<br>One uncertain future.</p>
+      </div>
+      <div class="section-copy">
+        <p class="eyebrow">CHAPTER 04 — THE QUESTION THAT HURTS</p>
+        <h2>Who am I standing beside...<br><em>if courage is what love needs?</em></h2>
+        <p>
+          Sometimes, I wonder who I was trusting so blindly.
+          The thought of building a future with someone who might not have
+          the courage to stand beside me leaves me questioning everything
+          I once believed in.
+        </p>
+        <p>
+          Loving someone is one thing. Standing beside that love when life
+          becomes complicated is another. I don't want to discover, at the
+          hardest moment, that I was the only one ready to fight for us.
+        </p>
+        <p>
+          What hurts most is how long I kept pushing those questions aside.
+          I was so attached to the person I loved that I forgot to ask
+          whether I felt secure in the future I was imagining.
+        </p>
+        <p class="handwritten">
+          Sometimes, I wonder whether I loved with my eyes open...
+          or hoped so hard that I stopped seeing clearly.
+        </p>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="little-section section-wrap reveal" id="little-things">
+      <div class="section-heading">
+        <p class="eyebrow">CHAPTER 05 — THE LITTLE THINGS YOU NEVER NOTICED</p>
+        <h2>You became a part of<br><em>my little things.</em></h2>
+        <p class="section-intro">
+          Maybe you never noticed. Maybe I never explained.
+          Somehow, you became familiar in places you never even saw.
+        </p>
+      </div>
+
+      <div class="little-grid">
+        <article class="little-card">
+          <span class="card-symbol">♡</span>
+          <p class="card-number">01 — MY PRIORITY</p>
+          <h3>Somewhere along the way...</h3>
+          <p>I began giving you a place in my life that I don't think you ever fully realised. I kept making room for you, sometimes forgetting to make enough room for myself.</p>
+        </article>
+        <article class="little-card">
+          <span class="card-symbol">☾</span>
+          <p class="card-number">02 — BEFORE I SLEEP</p>
+          <h3>Your face, one more time.</h3>
+          <p>Some nights, I look at your pictures before falling asleep. Sometimes I smile, sometimes I get lost in memories, and sometimes I wonder how one person can stay on my mind after the day is over.</p>
+        </article>
+        <article class="little-card">
+          <span class="card-symbol">✧</span>
+          <p class="card-number">03 — THE DETAILS</p>
+          <h3>You were in the smallest things.</h3>
+          <p>Even little details in my everyday life became connected to you. Things that seemed ordinary to anyone else carried a meaning I never really explained.</p>
+        </article>
+        <article class="little-card">
+          <span class="card-symbol">∞</span>
+          <p class="card-number">04 — WHAT I REMEMBER</p>
+          <h3>Some things stayed with me.</h3>
+          <p>There are details about you I remember without trying, while other ordinary things escape my mind. I never fully understood why your place in my memory became so different.</p>
+        </article>
+        <article class="little-card">
+          <span class="card-symbol">♡</span>
+          <p class="card-number">05 — WITHOUT TRYING</p>
+          <h3>You found your way into my thoughts.</h3>
+          <p>A song, a quiet moment, the end of a tiring day. I didn't always choose to think about you. Sometimes, the memories simply arrived on their own.</p>
+        </article>
+        <article class="little-card">
+          <span class="card-symbol">?</span>
+          <p class="card-number">06 — EVEN I DON'T KNOW</p>
+          <h3>Ask me why. I have no answer.</h3>
+          <p>Maybe it was love, maybe attachment, maybe the future I kept imagining. Perhaps it was all of them together. All I know is that I gave you more space in my heart than I knew how to explain.</p>
+        </article>
+      </div>
+
+      <p class="handwritten attachment-ending">
+        You were one part of my everyday life...<br>
+        but I made you a much bigger part of my world. ♡
       </p>
     </section>
 
-    <section class="letter-section" id="letter">
-      <p class="eyebrow">06 — A LETTER, SOMEDAY</p>
-      <h2>For the words<br>I could never <em>say.</em></h2>
+    <!-- CHAPTER 6 -->
+    <section class="rebirth-section section-wrap reveal">
+      <div class="section-copy">
+        <p class="eyebrow">CHAPTER 06 — BUT NOT ANYMORE</p>
+        <h2>I am not the same girl...<br><em>at least, I am learning.</em></h2>
+        <p>
+          Sometimes, I am angry with myself. Why did I keep believing
+          when people around me had questions? Why did I silence my own
+          doubts just because I was afraid of losing someone?
+        </p>
+        <p>
+          I called myself foolish for not listening. But loving someone
+          deeply doesn't make a person foolish. Forgetting your own worth
+          while trying to hold on to someone is what I am learning to change.
+        </p>
+        <p>
+          I want to build my career, grow into the person I dream of being,
+          and stop measuring my worth by someone else's choices.
+          I can care about someone without abandoning myself.
+        </p>
+        <p class="handwritten">I can love you... and still choose myself.</p>
+      </div>
+      <div class="rebirth-scene" aria-hidden="true">
+        <div class="rebirth-moon"></div>
+        <div class="rebirth-girl"></div>
+        <p class="rebirth-caption">Becoming her...</p>
+      </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="questions-section section-wrap reveal">
+      <div class="section-heading">
+        <p class="eyebrow">CHAPTER 07 — QUESTIONS WITHOUT ANSWERS</p>
+        <h2>Some questions<br><em>still stay with me.</em></h2>
+      </div>
+      <div class="question-list">
+        <div class="question"><span>01</span><p>Are we dreaming of the same future?</p></div>
+        <div class="question"><span>02</span><p>Will you stand beside me when choosing us becomes difficult?</p></div>
+        <div class="question"><span>03</span><p>Do I matter to you in the ways you matter to me?</p></div>
+        <div class="question"><span>04</span><p>Are we only in love, or are we both ready to build something real?</p></div>
+        <div class="question"><span>05</span><p>Can I be myself in this relationship without being afraid of what the future holds?</p></div>
+      </div>
+      <p class="question-ending">
+        I don't need every answer today. I just don't want to keep
+        silencing the questions that matter to me.
+      </p>
+    </section>
+
+    <!-- LETTER -->
+    <section class="letter-section reveal" id="letter">
+      <div class="letter-decoration">♡</div>
+      <p class="eyebrow">ONE LAST THING I WANT YOU TO KNOW</p>
+      <h2>This was never<br><em>just a website.</em></h2>
       <p class="letter-intro">
-        
-<section class="little-things">
-  <p class="eyebrow">A PART OF MY EVERYDAY LIFE</p>
-
-  <h2>You became a part of<br>my <em>little things.</em></h2>
-
-  <p class="little-intro">
-    Maybe you never noticed. Maybe I never told you.
-    But somehow, you became a part of so many little
-    things in my life that even I don't know when it happened.
-  </p>
-
-  <div class="little-grid">
-
-    <article class="little-card">
-      <span class="little-icon">♡</span>
-      <p class="card-label">01 — MY PRIORITY</p>
-      <h3>Somewhere along the way...</h3>
-      <p>
-        I started giving you a place in my life that
-        I don't think you ever fully realised.
-        It wasn't always something I said.
-        It showed in the little things I did.
-      </p>
-    </article>
-
-    <article class="little-card">
-      <span class="little-icon">☾</span>
-      <p class="card-label">02 — BEFORE I SLEEP</p>
-      <h3>Your face, one more time.</h3>
-      <p>
-        Some nights, I look at your pictures before
-        falling asleep. Sometimes I smile, sometimes
-        I get lost in my thoughts, and sometimes I
-        wonder how one person can stay on my mind
-        even when the day is over.
-      </p>
-    </article>
-
-    <article class="little-card">
-      <span class="little-icon">⌘</span>
-      <p class="card-label">03 — IN THE LITTLE DETAILS</p>
-      <h3>Even the things you never saw.</h3>
-      <p>
-        Your number became a familiar part of things
-        I use every day. Even some of my private
-        passwords were connected to your name.
-        Not because I had to, but because you had
-        become that important to me.
-      </p>
-    </article>
-
-    <article class="little-card">
-      <span class="little-icon">✧</span>
-      <p class="card-label">04 — THE STRANGEST PART</p>
-      <h3>I remember yours. I forget my own.</h3>
-      <p>
-        There are so many little details about you
-        that stay in my mind. Yet if someone asked
-        me for certain numbers from my own home,
-        I might struggle to remember them.
-        Somehow, yours became the ones I knew by heart.
-      </p>
-    </article>
-
-    <article class="little-card">
-      <span class="little-icon">∞</span>
-      <p class="card-label">05 — WITHOUT EVEN TRYING</p>
-      <h3>You find your way into my thoughts.</h3>
-      <p>
-        I don't sit down and decide to think about you.
-        It just happens. In quiet moments, at the end
-        of a tiring day, before I sleep, or when
-        something reminds me of us.
-      </p>
-    </article>
-
-    <article class="little-card">
-      <span class="little-icon">?</span>
-      <p class="card-label">06 — EVEN I DON'T KNOW</p>
-      <h3>Ask me why. I have no answer.</h3>
-      <p>
-        Why do I look at your pictures so often?
-        Why do so many little things remind me of you?
-        Why did you become such a familiar part of
-        my everyday life?
-        Honestly, I don't have all the answers either.
-      </p>
-    </article>
-
-  </div>
-
-  <div class="little-ending">
-    <p>
-      “You may have been one person in my everyday life.
-      But in my heart, you occupied a space much bigger
-      than the little things could ever explain.”
-    </p>
-  </div>
-</section>
-
-
-        
-        Some letters are not written to change someone.
-        They are written because the heart deserves a voice.
+        Some things are difficult to say out loud.
+        So I left them here, between the words.
       </p>
 
-      <button class="letter-button" id="openLetter" type="button">
-        Open the letter <span>↗</span>
+      <button class="letter-button" id="letterButton" type="button"
+        aria-expanded="false" aria-controls="hiddenLetter">
+        Open the letter <span>♡</span>
       </button>
 
-      <div class="letter-content" id="letterContent" hidden>
-        <p>There is something I wish you understood.</p>
+      <div class="hidden-letter" id="hiddenLetter" hidden>
         <p>
-          I never needed life to be perfect. I only wanted
-          the things we felt and imagined to be met with
-          honesty. I wanted to know that when difficult
-          questions came, we could face them instead of
-          leaving them unanswered.
+          You may never fully know how attached I became, how many times
+          I tried to quiet my doubts, or how often I held on because I
+          believed there was something worth protecting between us.
         </p>
         <p>
-          I have feelings I cannot always explain. I have
-          fears I do not always show. And sometimes, beneath
-          all my silence, there is simply a heart hoping
-          to be understood without having to beg for it.
+          I never expected you to be perfect. I wanted honesty, clarity,
+          and the feeling that I wasn't the only one thinking about our
+          future. I wanted love that felt safe, not a future I had to guess at.
         </p>
         <p>
-          I can care about you deeply without abandoning
-          myself. I can cherish what we have shared and
-          still ask for clarity about what comes next.
+          Sometimes, I feel angry at myself for ignoring my own questions.
+          Sometimes, I wonder whether I was too hopeful, too attached,
+          or simply afraid to lose what I had imagined we could become.
         </p>
         <p>
-          Whatever the future brings, I hope you understand
-          that there was a real person behind every feeling
-          you may never have noticed.
+          I am not writing this to prove you wrong. I am writing it because
+          my feelings were real, even in the moments when I didn't know
+          what to do with them.
         </p>
-        <p class="signature">— A heart that had so much to say.</p>
+        <p>
+          I still have memories. I still have feelings. But I also have
+          dreams of my own, a life to build, and a version of myself
+          I don't want to lose again.
+        </p>
+        <p class="handwritten letter-sign">
+          What I felt was real.<br>
+          What comes next must be real, too. ♡
+        </p>
+        <p class="letter-signoff">— The girl who felt everything.</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>UNTOLD STORIES</span>
-    <span>Some feelings deserve words.</span>
+  <footer class="footer">
+    <p>Some feelings never get old.</p>
+    <span>Made of memories, questions & a little courage ♡</span>
+    <a href="#home">Back to the beginning ↑</a>
   </footer>
 
   <script src="script.js"></script>
